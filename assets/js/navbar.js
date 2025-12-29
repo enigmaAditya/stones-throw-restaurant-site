@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const menu = header.querySelector(".navbar-menu");
 
       toggle.addEventListener("click", () => {
+        const expanded = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", !expanded);
         menu.classList.toggle("active");
       });
     })
