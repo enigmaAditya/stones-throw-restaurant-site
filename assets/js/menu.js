@@ -42,21 +42,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function renderCategory(category) {
-    itemsContainer.innerHTML = "";
+  itemsContainer.innerHTML = "";
 
-    category.items.forEach(item => {
-      const div = document.createElement("div");
-      div.className = "menu-item";
+  category.items.forEach(item => {
+    const div = document.createElement("div");
+    div.className = "menu-item";
 
-      div.innerHTML = `
-        <div class="menu-item-header">
-          <h3>${item.name}</h3>
-          <span>${item.price}</span>
-        </div>
-        <p>${item.description}</p>
-      `;
+    div.innerHTML = `
+      <div class="menu-item-header">
+        <h3>${item.name}</h3>
+        <span>${item.price}</span>
+      </div>
+      <p>${item.description}</p>
+    `;
 
-      itemsContainer.appendChild(div);
-    });
-  }
+    itemsContainer.appendChild(div);
+  });
+}
+
 });

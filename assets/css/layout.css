@@ -155,3 +155,11 @@ main {
     border-radius: var(--radius-lg);
   }
 }
+
+section {
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.08)
+  );
+}
+

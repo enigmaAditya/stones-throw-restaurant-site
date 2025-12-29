@@ -28,12 +28,19 @@ body {
 /* -------- ROOT VARIABLES -------- */
 :root {
   /* Colors */
-  --color-bg: #0e0e0e;
-  --color-surface: #161616;
-  --color-text: #f2f2f2;
-  --color-muted: #b3b3b3;
-  --color-accent: #c9a24d; /* gold accent */
-  --color-border: rgba(255, 255, 255, 0.08);
+  /* Backgrounds */
+  --color-bg: #0e1420;        /* deeper sapphire, less harsh */
+  --color-surface: #1a2438;   /* richer blue surface */
+
+  /* Text */
+  --color-text: #f4f6fb;      /* softer premium white */
+  --color-muted: #c2c9db;     /* warmer muted text */
+
+  /* Accent */
+  --color-accent: #d8b86a;    /* refined champagne gold */
+
+  /* Borders */
+  --color-border: rgba(255, 255, 255, 0.06);
 
   /* Typography */
   --font-body: system-ui, -apple-system, BlinkMacSystemFont,
@@ -127,7 +134,7 @@ button {
 }
 
 .btn-primary:hover {
-  transform: translateY(-1px);
+  filter: brightness(1.1);
 }
 
 .btn-secondary {
