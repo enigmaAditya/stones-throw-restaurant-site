@@ -226,3 +226,43 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+/* ===============================
+   RESERVATIONS PAGE
+   =============================== */
+
+#reservations-page {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#reservations-page .subtext {
+  margin-bottom: var(--space-md);
+}
+
+.reservation-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.booking-container {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.hidden {
+  display: none;
+}
+
+.reservation-info h3 {
+  margin-bottom: var(--space-xs);
+}

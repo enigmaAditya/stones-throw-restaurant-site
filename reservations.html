@@ -1,13 +1,66 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservations - Stones Throw</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservations | Stones Throw</title>
+
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 
 <body>
-</body>
 
+  <!-- Navbar -->
+  <header id="site-header"></header>
+
+  <main>
+    <section id="reservations-page">
+
+      <h1>Reservations</h1>
+      <p class="subtext">Reserve your table or call us directly.</p>
+
+      <!-- Primary Actions -->
+      <div class="reservation-actions">
+        <a href="tel:+1234567890" class="btn btn-primary btn-full">
+          📞 Call to Reserve
+        </a>
+
+        <button id="open-booking" class="btn btn-secondary btn-full">
+          🍽 Reserve Online
+        </button>
+      </div>
+
+      <!-- Online Booking Placeholder -->
+      <div id="booking-container" class="booking-container hidden">
+        <p>Online booking coming soon.</p>
+        <!-- Future: OpenTable / Resy / Custom form -->
+      </div>
+
+      <!-- Hours & Info -->
+      <div class="reservation-info">
+        <h3>Hours</h3>
+        <p>Sun–Thu: 3pm – 9pm</p>
+        <p>Fri–Sat: 3pm – 10pm</p>
+        <p>Happy Hour: Daily 3pm – 6pm</p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="site-footer"></footer>
+
+  <!-- Sticky CTA -->
+  <div id="sticky-cta"></div>
+
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/sticky-bar.js"></script>
+  <script src="assets/js/reservations.js"></script>
+
+</body>
 </html>
