@@ -174,7 +174,8 @@
 
 .menu-item {
   border-bottom: 1px solid var(--color-border);
-  padding: var(--space-sm) 0;
+  padding: 14px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
 }
 
 .menu-item-header {
@@ -185,8 +186,14 @@
 
 .menu-item-header span {
   color: var(--color-accent);
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: 0.3px;
 }
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
 .menu-link {
   display: block;
   text-align: center;
