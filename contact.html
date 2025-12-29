@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Stones Throw</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Stones Throw</title>
+
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 
 <body>
-</body>
 
+  <!-- Navbar -->
+  <header id="site-header"></header>
+
+  <main>
+    <section id="contact-page">
+
+      <h1>Contact Us</h1>
+      <p class="subtext">We’d love to hear from you. Visit, call, or find us on the map.</p>
+
+      <!-- Primary Contact Actions -->
+      <div class="contact-actions">
+        <a href="tel:+1234567890" class="btn btn-primary btn-full">
+          📞 Call (239) 291-3900
+        </a>
+
+        <a href="mailto:hello@stonesthrow.com" class="btn btn-secondary btn-full">
+          ✉️ Email Us
+        </a>
+      </div>
+
+      <!-- Address -->
+      <div class="contact-info">
+        <h3>Location</h3>
+        <p>Stones Throw<br/>Cape Coral, FL</p>
+
+        <a
+          href="https://maps.google.com/?q=Stones+Throw+Cape+Coral+FL"
+          target="_blank"
+          rel="noopener"
+          class="map-link"
+        >
+          📍 Open in Google Maps
+        </a>
+      </div>
+
+      <!-- Optional Embedded Map -->
+      <div class="map-toggle">
+        <button id="toggle-map" class="btn btn-secondary btn-full">
+          Show Map
+        </button>
+
+        <div id="map-container" class="map-container hidden">
+          <iframe
+            title="Stones Throw Location"
+            src="https://www.google.com/maps?q=Stones+Throw+Cape+Coral+FL&output=embed"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="site-footer"></footer>
+
+  <!-- Sticky CTA -->
+  <div id="sticky-cta"></div>
+
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/sticky-bar.js"></script>
+  <script src="assets/js/contact.js"></script>
+
+</body>
 </html>
