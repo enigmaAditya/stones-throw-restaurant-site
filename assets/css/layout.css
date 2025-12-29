@@ -1,1 +1,146 @@
 /* Layout styles */
+/* ===============================
+   LAYOUT STYLES
+   Mobile-first structure
+   =============================== */
+
+/* -------- MAIN WRAPPER -------- */
+main {
+  display: block;
+  padding-bottom: 4rem; /* space for sticky CTA */
+}
+
+/* -------- HERO SECTION -------- */
+#hero {
+  position: relative;
+  min-height: 80vh;
+  background: url("../images/hero/hero.webp") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: var(--space-xl) var(--space-md);
+  text-align: center;
+  width: 100%;
+}
+
+.hero-overlay h1 {
+  margin-bottom: var(--space-sm);
+}
+
+.hero-overlay p {
+  max-width: 28rem;
+  margin: 0 auto var(--space-md);
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+/* -------- QUICK INFO -------- */
+#quick-info {
+  background-color: var(--color-surface);
+}
+
+#quick-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  text-align: center;
+}
+
+/* -------- MENU PREVIEW -------- */
+#menu-preview h2 {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.menu-categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.menu-categories button {
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+}
+
+.link-more {
+  display: block;
+  text-align: center;
+  font-size: var(--fs-small);
+  color: var(--color-accent);
+}
+
+/* -------- REVIEWS -------- */
+#reviews h2 {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.review {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.review span {
+  font-size: var(--fs-small);
+  color: var(--color-accent);
+}
+
+/* ===============================
+   TABLET & UP
+   =============================== */
+@media (min-width: 768px) {
+
+  .hero-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #quick-info ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .menu-categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #reviews {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+/* ===============================
+   DESKTOP & UP
+   =============================== */
+@media (min-width: 1024px) {
+
+  section {
+    padding: var(--space-xl) 10%;
+  }
+
+  .menu-categories {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hero-overlay {
+    max-width: 900px;
+    border-radius: var(--radius-lg);
+  }
+}

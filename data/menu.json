@@ -1,1 +1,47 @@
-{}
+{
+  "categories": [
+    {
+      "id": "cocktails",
+      "title": "Craft Cocktails",
+      "items": [
+        {
+          "name": "Old Fashioned",
+          "description": "Bourbon, bitters, orange peel",
+          "price": "$12"
+        },
+        {
+          "name": "Margarita",
+          "description": "Tequila, lime, agave",
+          "price": "$11"
+        }
+      ]
+    },
+    {
+      "id": "starters",
+      "title": "Starters",
+      "items": [
+        {
+          "name": "Crispy Calamari",
+          "description": "Lemon aioli, herbs",
+          "price": "$14"
+        },
+        {
+          "name": "House Fries",
+          "description": "Garlic, parmesan",
+          "price": "$9"
+        }
+      ]
+    },
+    {
+      "id": "mains",
+      "title": "Mains",
+      "items": [
+        {
+          "name": "Grilled Salmon",
+          "description": "Seasonal vegetables",
+          "price": "$22"
+        }
+      ]
+    }
+  ]
+}
