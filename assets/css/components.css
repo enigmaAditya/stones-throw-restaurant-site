@@ -181,13 +181,14 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-sm);
-  margin-bottom: var(--space-md);
+  margin: var(--space-lg) 0;
 }
 
 .menu-images img {
   width: 100%;
   border-radius: var(--radius-md);
   object-fit: cover;
+  aspect-ratio: 4 / 3;
 }
 
 @media (min-width: 768px) {
@@ -338,7 +339,7 @@
 .vibe-image {
   width: 100%;
   border-radius: var(--radius-lg);
-  margin: var(--space-lg) 0;
+  margin: var(--space-xl) 0;
 }
 
 /* ===============================
